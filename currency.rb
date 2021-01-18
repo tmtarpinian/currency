@@ -22,41 +22,17 @@ def currency
 	end
 
 	def print_combinations(results, denominations)
-		print "Quarter Dime Nickel Penny\n"
+		names_array = ["Quarter", "Dime", "Nickel", "Penny"]
+		header_column_widths = Hash[names_array.each_with_index.map { |e, i| [i+1, e.length] }]
+		print "#{names_array.join(" ")} \n"
 		print "\n"
-		spacer_cycle = "A"
+		counter = 1
 		results.each do |array|										#Time Complexity of O(n^2)
 			combination_array = []
 			denominations.each {|denomination| combination_array << array.count(denomination)}
 			combination_array.each do|number| 
-				case spacer_cycle
-					when "A"
-						print "#{number}".prepend(" " * 6)
-						spacer_cycle = "B"
-					when "B"
-						if number.to_s.length == 1
-						print "#{number}".prepend(" " * 4)
-						else
-							print "#{number}".prepend(" " * 3)
-						end
-						spacer_cycle = "C"
-					when "C"
-						if number.to_s.length == 1
-							print "#{number}".prepend(" " * 6)
-						else
-							print "#{number}".prepend(" " * 5)
-						end
-						spacer_cycle = "D"
-					when "D"
-						if number.to_s.length == 1
-							print "#{number}".prepend(" " * 5)
-						elsif number.to_s.length == 2
-							print "#{number}".prepend(" " * 4)
-						else
-							print "#{number}".prepend(" " * 3)
-						end
-						spacer_cycle = "A"
-				end
+				print "#{number} ".prepend(" " * (header_column_widths[counter]-number.to_s.length))
+				counter == names_array.length ? counter = 1 : counter +=1
 			end
 			print "\n"
 		end
@@ -64,9 +40,8 @@ def currency
 		print "\n"
 		puts "Count: #{results.length}"
 	end
-
-		find_combinations(results, [], denominations, target)
-		print_combinations(results, denominations)
+	find_combinations(results, [], denominations, target)
+	print_combinations(results, denominations)
 end
 
 currency
