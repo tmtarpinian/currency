@@ -1,5 +1,5 @@
 require "spec_helper"
-require "./currency"
+require "./lib/currency"
 
 describe "currency" do
 	it "calculates the correct number of currency combinations" do
