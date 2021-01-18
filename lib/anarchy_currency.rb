@@ -58,10 +58,10 @@ def currency_calculator(input_currencies, target)
 	results
 end
 
-#input_currencies = "Arrowhead,3,Coin,1.5,Button,150"
-input_currencies = "Quarter,4,Dime,10,Nickel,20,Penny,100"
+input_currencies = "Arrowhead,3,Coin,1.5,Button,150"
+#input_currencies = "Quarter,4,Dime,10,Nickel,20,Penny,100"
 #input_currencies = "Arrowhead,3,Coin,1.5,Button,150,Shell,25"
-target = 100
-#target = 150
+#target = 100
+target = 150
 
 currency_calculator(input_currencies, target)
