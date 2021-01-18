@@ -3,7 +3,6 @@ def currency
 	target = 100
 	results = []
 
-
 #backtracking recursion method that assigns possible currency combinations into an array of arrays
 	def find_combinations(results, progressive_combination_array, denominations, target, idx=0)
 		if target == 0
@@ -42,6 +41,7 @@ def currency
 	end
 	find_combinations(results, [], denominations, target)
 	print_combinations(results, denominations)
+	results
 end
 
 currency
