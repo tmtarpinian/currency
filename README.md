@@ -84,7 +84,7 @@ To install, in your terminal, run `gem install colorize`.
 To run any of the files, [download a zipped file from Github](https://github.com/tmtarpinian/currency).
 
 From there, download a zipped file of the repo or use its web url to clone.
-![clone repo](./assets/clone.jpg) 
+![clone repo](./assets/clone.png) 
 
 Please have Ruby, Faker, and the Colorize gems installed prior to running this application ([see Dependencies above](##Dependencies))
 
