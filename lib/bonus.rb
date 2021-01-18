@@ -6,12 +6,19 @@ def currency_calculator(input_currencies, target)
 	def currency_hash(input_currencies, target) #helper method returns a hash of denominations with values
 		hash = {}
         key = ""
-        dictatorship = Faker::Restaurant.name
+		dictatorship = Faker::Restaurant.name
+		print "\n"
+		print "\n"
+		print "The United States Federal Reserve has collapsed.\n"
+		print "Anarcy has ensued.\n"
+		print "As numerous military dictatorships take over control of our country,\n"
+		print "each installs their own currency system.\n"
+		print "\n"
+		print "\n"
         print "The current military dictatorship goes by the name #{dictatorship}\n".light_green
-        
-        print "If you need to make a $#{target} purchase\n".light_green
+        print "You need to make a $#{target} purchase\n".light_green
         print "#{dictatorship} is regulating each of the following currency units as equivalents to your total your purchase ammount:\n".light_green
-    
+		print "\n"
         input_currencies.split(",").each do |element|
 			if element == element.to_f.to_s || element == element.to_i.to_s
 				hash[key] = element.to_f
@@ -20,8 +27,9 @@ def currency_calculator(input_currencies, target)
 			end
         end
         hash.each{|k,v| print "#{k}(s): #{v.to_i}  "}
-        print "\n"
-        print "You won't any type of 'change' back,\n".light_green
+		print "\n"
+		print "\n"
+        print "You won't receive any type of 'change' back,\n".light_green
         print "and given how precious these resources are, you want to avoid over paying.\n".light_green
 		hash.sort_by {|key, value| -value}.to_h 
 	end
@@ -44,9 +52,9 @@ def currency_calculator(input_currencies, target)
 	end
 
 	def print_combinations(results, denominations, names_array) #print format helper method
-        
         header_column_widths = Hash[names_array.each_with_index.map { |name, i| [i+1, name.length] }]
-        print "The following currency combinations can be made to create the exact amount of your purchase total:\n".red
+        print "The following currency combinations can be made to pay the exact amount of your purchase:\n"
+		print "\n"
 		print "#{names_array.join(" ")} \n".light_blue
 		counter = 1
 		results.each do |array|										
