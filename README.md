@@ -97,9 +97,9 @@ Please have Ruby, Faker, and the Colorize gems installed prior to running this a
 After unzipping and saving the contents to the desired directory (or using `git clone` to clone the repo in your terminal), change directories to the directory containing the copy of the repo.
 
 From within that directory, run any of the following commands in your terminal:
-1. `ruby ./lib/currency` (to run the `currency` algorithm)
-2. `ruby ./lib/anarchy_currency` (to run the `anarchy_currency` algorithm)
-3. `ruby ./lib/bonus` (to run the `bonus` algorithm)
+1. `ruby ./lib/currency.rb` (to run the `currency` algorithm)
+2. `ruby ./lib/anarchy_currency.rb` (to run the `anarchy_currency` algorithm)
+3. `ruby ./lib/bonus.rb` (to run the `bonus` algorithm)
 
 These files do <ins>not</ins> produce any prompts since there is no CLI file at this time.
 
@@ -110,10 +110,10 @@ For the `bonus.rb` file, new `Faker` seed data is generated each time the file i
 ---
 
 ## Improvement
-This project was originally started to write two algorithms. Those two files, along with the `bonus.rb`, don't warrant a Gemfile, environment.rb, or a file dedicated to controlling the CLI. However, the `bonus.rb` can be utilized for the basis of a small CLI Ruby app.
+This project was originally started to write two algorithms. Those two files, along with the `bonus.rb`, don't warrant a Gemfile, environment.rb, or a file dedicated to controlling the CLI. However, going forward, the `bonus.rb` can be reworked as the basis of a small CLI Ruby app.
 
 ### Stories
-To expand these initial files to a CLI Ruby app, the next tasks might look like this:
+To expand the `bonus.rb`file to a CLI Ruby app, the next tasks might look like this:
 
 - [ ] FEAT: Create a CLI file
 - [ ] BUILD: Create a Gemfile, environment file, and bundler
