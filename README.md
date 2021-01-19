@@ -1,6 +1,5 @@
-# Currency
-
 ![Project Image](./assets/market.jpg) 
+# Currency
 > Calculates the possible combinations a set of currency can make, given a target sum of money.
 
 [![Coverage](badge.svg)](https://github.com/tmtarpinian/currency)
@@ -118,9 +117,9 @@ To expand the `bonus.rb`file to a CLI Ruby app, the next tasks might look like t
 - [ ] FEAT: Create a CLI file
 - [ ] BUILD: Create a Gemfile, environment file, and bundler
 - [ ] CHORE: Add Github Actions for continuous integration
-- [ ] BUILD: Move the [printer functions](./lib/bonus.rb#L46-70) to their own file as helpers
-- [ ] BUILD: Move the [currency_maker](./lib/bonus.rb#L82-89) method to its own file to separate concerns
-- [ ] PERF: Improve the O(n^2) time complexity in the [printer method](./lib/bonus.rb#L55-58)
+- [ ] BUILD: Move the [printer functions](./lib/bonus.rb#L54-L78) to their own file as helpers
+- [ ] BUILD: Move the [currency_maker](./lib/bonus.rb#L90-L97) method to its own file to separate concerns
+- [ ] PERF: Improve the O(n^2) time complexity in the [printer method](./lib/bonus.rb#L63-L66)
 - [ ] TEST: Write unit tests for these individual methods
 - [ ] TEST: Update the initial "unit" test as an end-to-end test
 - [ ] TEST: Add an integration test for methods employing the `Faker` gem.
