@@ -125,7 +125,6 @@ To expand the `bonus.rb`file to a CLI Ruby app, the next tasks might look like t
 - [ ] TEST: Update the initial "unit" test as an end-to-end test
 - [ ] TEST: Add an integration test for methods employing the `Faker` gem.
 
----
 ### Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/tmtarpinian/currency. PRs can be made from the main branch (at the moment), but a development branch will be created after a Gemfile and `environment.rb` file are added to the project.

@@ -10,7 +10,7 @@ def currency_calculator(input_currencies, target)
 		print "\n"
 		print "\n"
 		print "The United States Federal Reserve has collapsed.\n"
-		print "Anarcy has ensued.\n"
+		print "Anarchy has ensued.\n"
 		print "As numerous military dictatorships take over control of our country,\n"
 		print "each installs their own currency system.\n"
 		print "\n"
