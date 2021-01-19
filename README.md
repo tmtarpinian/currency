@@ -1,6 +1,6 @@
 # Currency
 
-![Project Image](./assets/cantina.jpg) 
+![Project Image](./assets/market.jpg) 
 > Calculates the possible combinations a set of currency can make, given a target sum of money.
 
 [![Coverage](badge.svg)](https://github.com/tmtarpinian/currency)
@@ -13,25 +13,31 @@
     - [Ruby](###Ruby)
         - [Changing Ruby Versions](####Changing_Versions)
         - [Installing Ruby Versions](####Installing_Versions)
-- [Usage](##Usage)
+    - [Faker](###Faker)
+    - [Colorize](###Colorize)
+- [Run](##Run)
 - [Improvement](##Improvement)
     - [Stories](###Stories)
+    - [Contributing](###Contributing)
 - [Acknowledgements](##Acknowledgements)
-- [Contributing](##Contributing)
 - [License](##license)
 - [Maintainers](##Maintainer(s))
 
 ---
 ## Summary
 This repo has three alogorithms in three respective files within the `lib` directory.
-The file `currency` contains an Ruby method that will calculate and print the possible combinations US Quarters, Dimes, Nickels, and Pennies can make to sum $1.
+The file `currency` contains a Ruby method that will calculate and print the possible combinations that U.S. Quarters, Dimes, Nickels, and Pennies can make to sum $1.
 
-The file `anarchy_currency` contains an Ruby method that will calculate and print the possible exact combinations an arbitrary set of currency values can make to sum an arbitrary sum.
+The file `anarchy_currency` contains an Ruby method that will calculate and print the possible <ins>exact</ins> combinations an arbitrary set of currency values can make to equal an arbitrary sum.
 
-The `bonus` file contains an Ruby method that uses the Faker gem to generate arbitrary currency names, assigns them a random value, and then calculates and prints the possible exact combinations to sum $1.
+The `bonus` file contains a Ruby method that uses the Faker gem to generate arbitrary currency names, assigns them a random value, and then calculates and prints the possible <ins>exact</ins> combinations that arbitrary set of currency values can make to equal a random sum. In some cases, no possibilities for a combination with an exact sum are possible.
 
 ---
 ## Dependencies
+The following requirements are necessary to run these files:
+- Ruby ~>2.6.1
+- Faker gem
+- Colorize gem
 
 ### Ruby
 
@@ -79,11 +85,11 @@ To install, in your terminal, run `gem install colorize`.
 [Find the Colorize documentation here](https://github.com/fazibear/colorize)
 
 ---
-## Usage
+## Run
 
-To run any of the files, [download a zipped file from Github](https://github.com/tmtarpinian/currency).
+To run any of the files, [visit the file's repo on Github](https://github.com/tmtarpinian/currency).
 
-From there, download a zipped file of the repo or use its web url to clone.
+From there, download a zipped copy of the repo files or use its web url to clone.
 ![clone repo](./assets/clone.png) 
 
 Please have Ruby, Faker, and the Colorize gems installed prior to running this application ([see Dependencies above](##Dependencies))
@@ -120,6 +126,13 @@ To expand these initial files to a CLI Ruby app, the next tasks might look like 
 - [ ] TEST: Add an integration test for methods employing the `Faker` gem.
 
 ---
+### Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/tmtarpinian/currency. PRs can be made from the main branch (at the moment), but a development branch will be created after a Gemfile and `environment.rb` file are added to the project.
+
+This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+
+---
 
 ## Acknowledgements
 
@@ -128,11 +141,7 @@ Banner photo is property of C.R.O.N.U.S Foundation and Dark Crystal Games © 201
 Thanks to the good folks at [Faker](https://github.com/faker-ruby/faker) that keep supplying us with time-saving and entertaining seed data.
 
 ---
-## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/tmtarpinian/currency. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
----
 ## License
 
 The app is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
